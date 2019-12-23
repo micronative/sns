@@ -3,9 +3,9 @@
 namespace Brighte\Sns\Tests;
 
 use Aws\Sns\SnsClient as AwsSnsClient;
-use Enqueue\Sns\SnsClient;
-use Enqueue\Sns\SnsConnectionFactory;
-use Enqueue\Sns\SnsContext;
+use Brighte\Sns\SnsClient;
+use Brighte\Sns\SnsConnectionFactory;
+use Brighte\Sns\SnsContext;
 use Enqueue\Test\ClassExtensionTrait;
 use Interop\Queue\ConnectionFactory;
 use PHPUnit\Framework\TestCase;
