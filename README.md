@@ -1,28 +1,25 @@
-<h2 align="center">Supporting Enqueue</h2>
+# Brighte Sns
+[![Software license][ico-license]](LICENSE)
+[![Version][ico-version-stable]][link-packagist]
+[![Download][ico-downloads-monthly]][link-downloads]
+[![Build status][ico-travis]][link-travis]
+[![Coverage][ico-codecov]][link-codecov]
 
-Enqueue is an MIT-licensed open source project with its ongoing development made possible entirely by the support of community and our customers. If you'd like to join them, please consider:
 
-- [Become a sponsor](https://www.patreon.com/makasim)
-- [Become our client](http://forma-pro.com/)
+[ico-license]: https://img.shields.io/github/license/nrk/predis.svg
+[ico-version-stable]: https://img.shields.io/packagist/v/brightecapital/sns.svg
+[ico-downloads-monthly]: https://img.shields.io/packagist/dm/brightecapital/sns.svg
+[ico-travis]: https://travis-ci.com/brighte-capital/sns.svg?branch=master
+[ico-codecov]: https://codecov.io/gh/brighte-capital/sns/branch/master/graph/badge.svg
 
----
+[link-packagist]: https://packagist.org/packages/brightecapital/sns
+[link-codecov]: https://codecov.io/gh/brighte-capital/sns
+[link-travis]: https://travis-ci.com/brighte-capital/sns
+[link-downloads]: https://packagist.org/packages/brightecapital/sns/stats
 
-# Amazon SNS Transport
+# Description
 
-[![Gitter](https://badges.gitter.im/php-enqueue/Lobby.svg)](https://gitter.im/php-enqueue/Lobby)
-[![Build Status](https://travis-ci.org/php-enqueue/sns.png?branch=master)](https://travis-ci.org/php-enqueue/sns)
-[![Total Downloads](https://poser.pugx.org/enqueue/sns/d/total.png)](https://packagist.org/packages/enqueue/sns)
-[![Latest Stable Version](https://poser.pugx.org/enqueue/sns/version.png)](https://packagist.org/packages/enqueue/sns)
-
-This is an implementation of Queue Interop specification. It allows you to send and consume message using [Amazon SNS](https://aws.amazon.com/sns/) service.
-
-## Resources
-
-* [Site](https://enqueue.forma-pro.com/)
-* [Documentation](https://php-enqueue.github.io/transport/sns/)
-* [Questions](https://gitter.im/php-enqueue/Lobby)
-* [Issue Tracker](https://github.com/php-enqueue/enqueue-dev/issues)
-
-## License
-
-It is released under the [MIT License](LICENSE).
+This project was forked from [enqueue/sns](https://github.com/php-enqueue/sns) and made the following improvements:
++ Move all classes to src
++ Rename Tests to tests
++ Move examples to tests
