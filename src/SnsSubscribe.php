@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Enqueue\Sns;
+namespace Brighte\Sns;
 
 class SnsSubscribe
 {

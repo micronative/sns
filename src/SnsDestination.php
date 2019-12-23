@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Enqueue\Sns;
+namespace Brighte\Sns;
 
 use Interop\Queue\Queue;
 use Interop\Queue\Topic;
