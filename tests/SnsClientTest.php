@@ -6,7 +6,7 @@ use Aws\MultiRegionClient;
 use Aws\Result;
 use Aws\Sdk;
 use Aws\Sns\SnsClient as AwsSnsClient;
-use Enqueue\Sns\SnsClient;
+use Brighte\Sns\SnsClient;
 use PHPUnit\Framework\TestCase;
 
 class SnsClientTest extends TestCase
