@@ -27,11 +27,6 @@ class SnsProducerTest extends TestCase
         $this->assertClassImplements(Producer::class, SnsProducer::class);
     }
 
-    public function testCouldBeConstructedWithRequiredArguments()
-    {
-        new SnsProducer($this->createSnsContextMock());
-    }
-
     public function testShouldThrowIfBodyOfInvalidType()
     {
         $this->expectException(InvalidMessageException::class);
@@ -43,17 +38,7 @@ class SnsProducerTest extends TestCase
 
         $producer->send(new SnsDestination(''), $message);
     }
-
-    public function testShouldThrowIfDestinationOfInvalidType()
-    {
-        $this->expectException(InvalidDestinationException::class);
-        $this->expectExceptionMessage('The destination must be an instance of Enqueue\Sns\SnsDestination but got Mock_Destinat');
-
-        $producer = new SnsProducer($this->createSnsContextMock());
-
-        $producer->send($this->createMock(Destination::class), new SnsMessage());
-    }
-
+    
     public function testShouldThrowIfPublishFailed()
     {
         $destination = new SnsDestination('queue-name');
