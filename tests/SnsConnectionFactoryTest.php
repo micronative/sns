@@ -1,6 +1,6 @@
 <?php
 
-namespace Enqueue\Sns\Tests;
+namespace Brighte\Sns\Tests;
 
 use Aws\Sns\SnsClient as AwsSnsClient;
 use Enqueue\Sns\SnsClient;

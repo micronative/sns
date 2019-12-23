@@ -1,8 +1,8 @@
 <?php
 
-namespace Enqueue\Sns\Tests;
+namespace Brighte\Sns\Tests;
 
-use Enqueue\Sns\SnsConnectionFactory;
+use Brighte\Sns\SnsConnectionFactory;
 use Enqueue\Test\ClassExtensionTrait;
 use PHPUnit\Framework\TestCase;
 

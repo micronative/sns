@@ -1,8 +1,8 @@
 <?php
 
-namespace Enqueue\Sns\Tests\Spec;
+namespace Brighte\Sns\Tests\Spec;
 
-use Enqueue\Sns\SnsMessage;
+use Brighte\Sns\SnsMessage;
 use Interop\Queue\Spec\MessageSpec;
 
 class SnsMessageTest extends MessageSpec

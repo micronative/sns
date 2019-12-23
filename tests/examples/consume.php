@@ -15,7 +15,7 @@ if ($autoload) {
     throw new \LogicException('Composer autoload was not found');
 }
 
-use Enqueue\Sns\SnsConnectionFactory;
+use Brighte\Sns\SnsConnectionFactory;
 
 $factory = new SnsConnectionFactory(getenv('SNS_DSN'));
 $context = $factory->createContext();

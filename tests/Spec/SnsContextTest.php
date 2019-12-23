@@ -1,9 +1,9 @@
 <?php
 
-namespace Enqueue\Sns\Tests\Spec;
+namespace Brighte\Sns\Tests\Spec;
 
-use Enqueue\Sns\SnsClient;
-use Enqueue\Sns\SnsContext;
+use Brighte\Sns\SnsClient;
+use Brighte\Sns\SnsContext;
 use Interop\Queue\Spec\ContextSpec;
 
 class SnsContextTest extends ContextSpec

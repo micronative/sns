@@ -1,8 +1,8 @@
 <?php
 
-namespace Enqueue\Sns\Tests;
+namespace Brighte\Sns\Tests;
 
-use Enqueue\Sns\SnsDestination;
+use Brighte\Sns\SnsDestination;
 use Enqueue\Test\ClassExtensionTrait;
 use Interop\Queue\Queue;
 use Interop\Queue\Topic;

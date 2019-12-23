@@ -1,9 +1,9 @@
 <?php
 
-namespace Enqueue\Sns\Tests\Spec;
+namespace Brighte\Sns\Tests\Spec;
 
-use Enqueue\Sns\SnsContext;
-use Enqueue\Sns\SnsProducer;
+use Brighte\Sns\SnsContext;
+use Brighte\Sns\SnsProducer;
 use Interop\Queue\Spec\ProducerSpec;
 
 class SnsProducerTest extends ProducerSpec

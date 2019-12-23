@@ -1,6 +1,6 @@
 <?php
 
-namespace Enqueue\Sns\Tests;
+namespace Brighte\Sns\Tests;
 
 use Aws\MultiRegionClient;
 use Aws\Result;

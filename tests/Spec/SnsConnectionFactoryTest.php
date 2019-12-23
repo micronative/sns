@@ -1,8 +1,8 @@
 <?php
 
-namespace Enqueue\Sns\Tests\Spec;
+namespace Brighte\Sns\Tests\Spec;
 
-use Enqueue\Sns\SnsConnectionFactory;
+use Brighte\Sns\SnsConnectionFactory;
 use Interop\Queue\ConnectionFactory;
 use Interop\Queue\Spec\ConnectionFactorySpec;
 

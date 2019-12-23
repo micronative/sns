@@ -1,13 +1,13 @@
 <?php
 
-namespace Enqueue\Sns\Tests;
+namespace Brighte\Sns\Tests;
 
 use Aws\Result;
-use Enqueue\Sns\SnsClient;
-use Enqueue\Sns\SnsContext;
-use Enqueue\Sns\SnsDestination;
-use Enqueue\Sns\SnsMessage;
-use Enqueue\Sns\SnsProducer;
+use Brighte\Sns\SnsClient;
+use Brighte\Sns\SnsContext;
+use Brighte\Sns\SnsDestination;
+use Brighte\Sns\SnsMessage;
+use Brighte\Sns\SnsProducer;
 use Enqueue\Test\ClassExtensionTrait;
 use Interop\Queue\Destination;
 use Interop\Queue\Exception\DeliveryDelayNotSupportedException;

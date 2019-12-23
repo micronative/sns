@@ -1,8 +1,8 @@
 <?php
 
-namespace Enqueue\Sns\Tests\Spec;
+namespace Brighte\Sns\Tests\Spec;
 
-use Enqueue\Sns\SnsDestination;
+use Brighte\Sns\SnsDestination;
 use Interop\Queue\Spec\TopicSpec;
 
 class SnsTopicTest extends TopicSpec
