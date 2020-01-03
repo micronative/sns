@@ -23,3 +23,58 @@ This project was forked from [enqueue/sns](https://github.com/php-enqueue/sns) a
 + Move all classes to src
 + Rename Tests to tests
 + Move examples to tests
++ Change namespace to Brighte\Sns
+
+SnsProducer->send():
+<pre>
+public function send(Destination $destination, Message $message): void
+    {
+        InvalidDestinationException::assertDestinationInstanceOf($destination, SnsDestination::class);
+        InvalidMessageException::assertMessageInstanceOf($message, SnsMessage::class);
+
+        $body = $message->getBody();
+        if (empty($body)) {
+            throw new InvalidMessageException('The message body must be a non-empty string.');
+        }
+
+        $topicArn = $this->context->getTopicArn($destination);
+
+        $arguments = [
+            'Message' => $message->getBody(),
+            'TopicArn' => $topicArn,
+        ];
+
+        if ($message->getProperties()) {
+            foreach ($message->getProperties() as $name => $value) {
+                $arguments['MessageAttributes'][$name] = ['DataType' => 'String', 'StringValue' => $value];
+            }
+        }
+
+        if ($message->getMessageAttributes()) {
+            foreach ($message->getMessageAttributes() as $name => $value) {
+                $arguments['MessageAttributes'][$name] = ['DataType' => 'String', 'StringValue' => $value];
+            }
+        }
+
+        if (null !== ($structure = $message->getMessageStructure())) {
+            $arguments['MessageStructure'] = $structure;
+        }
+        if (null !== ($phone = $message->getPhoneNumber())) {
+            $arguments['PhoneNumber'] = $phone;
+        }
+        if (null !== ($subject = $message->getSubject())) {
+            $arguments['Subject'] = $subject;
+        }
+        if (null !== ($targetArn = $message->getTargetArn())) {
+            $arguments['TargetArn'] = $targetArn;
+        }
+
+        $result = $this->context->getSnsClient()->publish($arguments);
+
+        if (false == $result->hasKey('MessageId')) {
+            throw new \RuntimeException('Message was not sent');
+        }
+
+        $message->setSnsMessageId((string) $result->get('MessageId'));
+    }
+</pre>

@@ -48,20 +48,26 @@ class SnsProducer implements Producer
 
         $arguments = [
             'Message' => $message->getBody(),
-            'MessageAttributes' => [
-                'Headers' => [
-                    'DataType' => 'String',
-                    'StringValue' => json_encode([$message->getHeaders(), $message->getProperties()]),
-                ],
-            ],
             'TopicArn' => $topicArn,
         ];
 
-        if (null !== $message->getMessageAttributes()) {
-            $arguments['MessageAttributes'] = array_merge(
-                $arguments['MessageAttributes'],
-                $message->getMessageAttributes()
-            );
+        if ($message->getProperties()) {
+            foreach ($message->getProperties() as $name => $value) {
+                $arguments['MessageAttributes'][$name] = ['DataType' => 'String', 'StringValue' => $value];
+            }
+        }
+
+        if ($message->getMessageAttributes()) {
+            foreach ($message->getMessageAttributes() as $name => $value) {
+                $arguments['MessageAttributes'][$name] = ['DataType' => 'String', 'StringValue' => $value];
+            }
+        }
+
+        if ($message->getHeaders()) {
+            $arguments['MessageAttributes']['Headers'] = [
+                'DataType' => 'String',
+                'StringValue' => json_encode([$message->getHeaders()]),
+            ];
         }
 
         if (null !== ($structure = $message->getMessageStructure())) {
