@@ -1,9 +1,9 @@
 <?php
 
-namespace Brighte\Sns\Tests\Spec;
+namespace Micronative\Sns\Tests\Spec;
 
-use Brighte\Sns\SnsContext;
-use Brighte\Sns\SnsProducer;
+use Micronative\Sns\SnsContext;
+use Micronative\Sns\SnsProducer;
 use Interop\Queue\Spec\ProducerSpec;
 
 class SnsProducerTest extends ProducerSpec

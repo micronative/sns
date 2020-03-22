@@ -1,11 +1,11 @@
 <?php
 
-namespace Brighte\Sns\Tests;
+namespace Micronative\Sns\Tests;
 
 use Aws\Sns\SnsClient as AwsSnsClient;
-use Brighte\Sns\SnsClient;
-use Brighte\Sns\SnsConnectionFactory;
-use Brighte\Sns\SnsContext;
+use Micronative\Sns\SnsClient;
+use Micronative\Sns\SnsConnectionFactory;
+use Micronative\Sns\SnsContext;
 use Enqueue\Test\ClassExtensionTrait;
 use Interop\Queue\ConnectionFactory;
 use PHPUnit\Framework\TestCase;

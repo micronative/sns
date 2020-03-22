@@ -1,12 +1,12 @@
 <?php
 
-namespace Brighte\Sns\Tests;
+namespace Micronative\Sns\Tests;
 
 use Aws\MultiRegionClient;
 use Aws\Result;
 use Aws\Sdk;
 use Aws\Sns\SnsClient as AwsSnsClient;
-use Brighte\Sns\SnsClient;
+use Micronative\Sns\SnsClient;
 use PHPUnit\Framework\TestCase;
 
 class SnsClientTest extends TestCase

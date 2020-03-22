@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Brighte\Sns;
+namespace Micronative\Sns;
 
 use Aws\Sdk;
 use Aws\Sns\SnsClient as AwsSnsClient;

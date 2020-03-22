@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Brighte\Sns;
+namespace Micronative\Sns;
 
 class SnsSubscribe
 {

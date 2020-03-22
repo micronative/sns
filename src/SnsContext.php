@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Brighte\Sns;
+namespace Micronative\Sns;
 
 use Aws\Sns\SnsClient as AwsSnsClient;
 use Interop\Queue\Consumer;

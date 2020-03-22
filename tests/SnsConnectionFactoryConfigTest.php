@@ -1,8 +1,8 @@
 <?php
 
-namespace Brighte\Sns\Tests;
+namespace Micronative\Sns\Tests;
 
-use Brighte\Sns\SnsConnectionFactory;
+use Micronative\Sns\SnsConnectionFactory;
 use Enqueue\Test\ClassExtensionTrait;
 use PHPUnit\Framework\TestCase;
 

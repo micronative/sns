@@ -1,13 +1,13 @@
 <?php
 
-namespace Brighte\Sns\Tests;
+namespace Micronative\Sns\Tests;
 
 use Aws\Result;
-use Brighte\Sns\SnsClient;
-use Brighte\Sns\SnsContext;
-use Brighte\Sns\SnsDestination;
-use Brighte\Sns\SnsMessage;
-use Brighte\Sns\SnsProducer;
+use Micronative\Sns\SnsClient;
+use Micronative\Sns\SnsContext;
+use Micronative\Sns\SnsDestination;
+use Micronative\Sns\SnsMessage;
+use Micronative\Sns\SnsProducer;
 use Enqueue\Test\ClassExtensionTrait;
 use Interop\Queue\Destination;
 use Interop\Queue\Exception\DeliveryDelayNotSupportedException;

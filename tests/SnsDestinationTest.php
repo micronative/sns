@@ -1,8 +1,8 @@
 <?php
 
-namespace Brighte\Sns\Tests;
+namespace Micronative\Sns\Tests;
 
-use Brighte\Sns\SnsDestination;
+use Micronative\Sns\SnsDestination;
 use Enqueue\Test\ClassExtensionTrait;
 use Interop\Queue\Queue;
 use Interop\Queue\Topic;

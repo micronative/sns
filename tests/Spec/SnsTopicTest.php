@@ -1,8 +1,8 @@
 <?php
 
-namespace Brighte\Sns\Tests\Spec;
+namespace Micronative\Sns\Tests\Spec;
 
-use Brighte\Sns\SnsDestination;
+use Micronative\Sns\SnsDestination;
 use Interop\Queue\Spec\TopicSpec;
 
 class SnsTopicTest extends TopicSpec

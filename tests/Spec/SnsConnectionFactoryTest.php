@@ -1,8 +1,8 @@
 <?php
 
-namespace Brighte\Sns\Tests\Spec;
+namespace Micronative\Sns\Tests\Spec;
 
-use Brighte\Sns\SnsConnectionFactory;
+use Micronative\Sns\SnsConnectionFactory;
 use Interop\Queue\ConnectionFactory;
 use Interop\Queue\Spec\ConnectionFactorySpec;
 

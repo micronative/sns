@@ -15,7 +15,7 @@ if ($autoload) {
     throw new \LogicException('Composer autoload was not found');
 }
 
-use Brighte\Sns\SnsConnectionFactory;
+use Micronative\Sns\SnsConnectionFactory;
 
 $factory = new SnsConnectionFactory([
     'key' => getenv('ENQUEUE_AWS__SQS__KEY'),

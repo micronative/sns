@@ -1,8 +1,8 @@
 <?php
 
-namespace Brighte\Sns\Tests\Spec;
+namespace Micronative\Sns\Tests\Spec;
 
-use Brighte\Sns\SnsMessage;
+use Micronative\Sns\SnsMessage;
 use Interop\Queue\Spec\MessageSpec;
 
 class SnsMessageTest extends MessageSpec

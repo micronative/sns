@@ -1,9 +1,9 @@
 <?php
 
-namespace Brighte\Sns\Tests\Spec;
+namespace Micronative\Sns\Tests\Spec;
 
-use Brighte\Sns\SnsClient;
-use Brighte\Sns\SnsContext;
+use Micronative\Sns\SnsClient;
+use Micronative\Sns\SnsContext;
 use Interop\Queue\Spec\ContextSpec;
 
 class SnsContextTest extends ContextSpec

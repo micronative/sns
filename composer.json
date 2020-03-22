@@ -1,5 +1,5 @@
 {
-  "name": "brightecapital/sns",
+  "name": "micronative/sns",
   "type": "library",
   "description": "Message Queue Amazon SNS Transport (fork and improve from enqueue/sns)",
   "keywords": [
@@ -9,12 +9,12 @@
     "aws",
     "sns"
   ],
-  "homepage": "https://github.com/brightecapital/",
+  "homepage": "https://github.com/micronative/",
   "license": "MIT",
   "authors": [
     {
       "name": "Ken Ngo",
-      "email": "ken.ngo@brighte.com.au"
+      "email": "ngodinhloc@gmail.com"
     }
   ],
   "require": {
@@ -30,12 +30,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Brighte\\Sns\\": "src/"
+      "Micronative\\Sns\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Brighte\\Sns\\Tests\\": "tests/"
+      "Micronative\\Sns\\Tests\\": "tests/"
     }
   },
   "minimum-stability": "dev"
