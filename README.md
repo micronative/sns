@@ -1,4 +1,4 @@
-# Brighte Sns
+# Micronative/Sns
 [![Software license][ico-license]](LICENSE)
 [![Version][ico-version-stable]][link-packagist]
 [![Download][ico-downloads-monthly]][link-downloads]
@@ -23,7 +23,7 @@ This project was forked from [enqueue/sns](https://github.com/php-enqueue/sns) a
 + Move all classes to src
 + Rename Tests to tests
 + Move examples to tests
-+ Change namespace to Brighte\Sns
++ Change namespace to Micronative\Sns
 
 SnsProducer->send():
 <pre>
