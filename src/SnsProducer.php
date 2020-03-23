@@ -53,7 +53,7 @@ class SnsProducer implements Producer
 
         if ($message->getProperties()) {
             foreach ($message->getProperties() as $name => $value) {
-                $arguments['MessageAttributes'][$name] = ['DataType' => 'String', 'StringValue' => $value['StringValue']];
+                $arguments['MessageAttributes'][$name] = ['DataType' => 'String', 'StringValue' => $value];
             }
         }
 
