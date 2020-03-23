@@ -7,15 +7,15 @@
 
 
 [ico-license]: https://img.shields.io/github/license/nrk/predis.svg
-[ico-version-stable]: https://img.shields.io/packagist/v/brightecapital/sns.svg
-[ico-downloads-monthly]: https://img.shields.io/packagist/dm/brightecapital/sns.svg
-[ico-travis]: https://travis-ci.com/brighte-capital/sns.svg?branch=master
-[ico-codecov]: https://codecov.io/gh/brighte-capital/sns/branch/master/graph/badge.svg
+[ico-version-stable]: https://img.shields.io/packagist/v/micronative/sns.svg
+[ico-downloads-monthly]: https://img.shields.io/packagist/dm/micronative/sns.svg
+[ico-travis]: https://travis-ci.com/micronative/sns.svg?branch=master
+[ico-codecov]: https://codecov.io/gh/micronative/sns/branch/master/graph/badge.svg
 
-[link-packagist]: https://packagist.org/packages/brightecapital/sns
-[link-codecov]: https://codecov.io/gh/brighte-capital/sns
-[link-travis]: https://travis-ci.com/brighte-capital/sns
-[link-downloads]: https://packagist.org/packages/brightecapital/sns/stats
+[link-packagist]: https://packagist.org/packages/micronative/sns
+[link-codecov]: https://codecov.io/gh/micronative/sns
+[link-travis]: https://travis-ci.com/micronative/sns
+[link-downloads]: https://packagist.org/packages/micronative/sns/stats
 
 # Description
 
