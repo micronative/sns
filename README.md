@@ -52,7 +52,7 @@ public function send(Destination $destination, Message $message): void
 
         if ($message->getMessageAttributes()) {
             foreach ($message->getMessageAttributes() as $name => $value) {
-                $arguments['MessageAttributes'][$name] = ['DataType' => 'String', 'StringValue' => $value];
+                $arguments['MessageAttributes'][$name] = ['DataType' => 'String', 'StringValue' => $value['StringValue]];
             }
         }
 
