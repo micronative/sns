@@ -14,7 +14,7 @@
 
 [link-packagist]: https://packagist.org/packages/micronative/sns
 [link-codecov]: https://codecov.io/gh/micronative/sns
-[link-travis]: https://travis-ci.com/micronative/sns
+[link-travis]: https://travis-ci.org/github/micronative/sns
 [link-downloads]: https://packagist.org/packages/micronative/sns/stats
 
 # Description
