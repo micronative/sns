@@ -120,13 +120,17 @@ class SnsProducerTest extends TestCase
 
         $expectedArguments = [
             'Message' => 'theBody',
+            'TopicArn' => 'theTopicArn',
             'MessageAttributes' => [
+                'key' => [
+                    'DataType' => 'String',
+                    'StringValue' => 'value',
+                ],
                 'Headers' => [
                     'DataType' => 'String',
-                    'StringValue' => '[{"hkey":"hvaleu"},{"key":"value"}]',
+                    'StringValue' => '[{"hkey":"hvaleu"}]',
                 ],
             ],
-            'TopicArn' => 'theTopicArn',
         ];
 
         $client = $this->createSnsClientMock();
@@ -171,21 +175,17 @@ class SnsProducerTest extends TestCase
 
         $expectedArgument = [
             'Message' => 'message',
+            'TopicArn' => '',
             'MessageAttributes' => [
-                'Headers' => [
-                    'DataType' => 'String',
-                    'StringValue' => '[[],[]]',
-                ],
                 'Foo' => [
                     'DataType' => 'String',
                     'StringValue' => 'foo-value',
                 ],
                 'Bar' => [
-                    'DataType' => 'Binary',
-                    'BinaryValue' => 'bar-val',
+                    'DataType' => 'String',
+                    'StringValue' => 'bar-val',
                 ],
             ],
-            'TopicArn' => '',
             'MessageStructure' => 'structure',
             'PhoneNumber' => 'phone',
             'Subject' => 'subject',
@@ -209,7 +209,7 @@ class SnsProducerTest extends TestCase
             'message', [], [], $attributes, 'structure', 'phone',
             'subject', 'target_arn'
         );
-        $message->addAttribute('Bar', 'Binary', 'bar-val');
+        $message->addAttribute('Bar', 'String', 'bar-val');
 
         $destination = new SnsDestination('queue-name');
 
