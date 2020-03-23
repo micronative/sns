@@ -17,6 +17,12 @@
 [link-travis]: https://travis-ci.org/github/micronative/sns
 [link-downloads]: https://packagist.org/packages/micronative/sns/stats
 
+## Configuration
+<pre>
+"require": {
+        "micronative/sns": "^1.1.2"
+    }
+</pre>
 # Description
 
 This project was forked from [enqueue/sns](https://github.com/php-enqueue/sns) and made the following improvements:
