@@ -9,12 +9,12 @@
 [ico-license]: https://img.shields.io/github/license/nrk/predis.svg
 [ico-version-stable]: https://img.shields.io/packagist/v/micronative/sns.svg
 [ico-downloads-monthly]: https://img.shields.io/packagist/dm/micronative/sns.svg
-[ico-travis]: https://travis-ci.org/micronative/sns.svg?branch=master
+[ico-travis]: https://travis-ci.org/github/micronative/sns.svg?branch=master
 [ico-codecov]: https://codecov.io/gh/micronative/sns/branch/master/graph/badge.svg
 
 [link-packagist]: https://packagist.org/packages/micronative/sns
 [link-codecov]: https://codecov.io/gh/micronative/sns
-[link-travis]: https://travis-ci.org/gh/micronative/sns
+[link-travis]: https://travis-ci.org/github/micronative/sns
 [link-downloads]: https://packagist.org/packages/micronative/sns/stats
 
 # Description
