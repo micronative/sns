@@ -20,8 +20,16 @@
 ## Configuration
 <pre>
 "require": {
-        "micronative/sns": "^1.1.2"
-    }
+        "micronative/sns": "^2.0.0"
+},
+"repositories": [
+    { "type": "vcs", "url": "https://github.com/micronative/sns" }
+],
+</pre>
+
+Run
+<pre>
+composer require micronative/sns:2.0.0
 </pre>
 # Description
 
